@@ -13,19 +13,19 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com';                       //gmail SMTP server set to send through
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'user@example.com';                     //SMTP username (your gmail account)
+    $mail->Username   = 'sumeyraolmazz@example.com';                     //SMTP username (your gmail account)
     $mail->Password   = 'secret';                               //SMTP password (your gmail password or app password)
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port       = 465;
 
     //Recipients
-    $mail->setFrom('from@example.com', 'Mailer');         //Set the sender of the message (your email address)
-    $mail->addAddress('joe@example.net', 'Joe User');     //Add a recipient (your bae's email address)
+    $mail->setFrom('sumeyraolmazz@example.com', 'Mailer');         //Set the sender of the message (your email address)
+    $mail->addAddress('sumeyraolmazz@example.net', 'Joe User');     //Add a recipient (your bae's email address)
 
     //Content
     $mail->isHTML(true);
     $mail->Subject = 'I Love You';
-    $mail->Body    = 'Happy Valentine Day My Love. I love you so much. You are the best thing that has ever happened to me ❤';
+    $mail->Body    = 'Sevgililer günün kutlu olsun sevgilim. Çok aşığım sana. Benim eeen ennnn ennnnn kıymetlimsiinnn askimmmm ❤';
 
     $mail->send();
     echo 'Message has been sent';
